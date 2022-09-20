@@ -21,14 +21,14 @@ router.get('/countries', async(req, res) => {
     const { name } = req.query;
     const continent = await axios.get(`https://restcountries.com/v3.1/name/${name}`);
     const response = await axios.get(`${countries[continent?.data[0]?.continents[0]]}?Name=${name}`);
-/*     res.json(
+    res.json(
       buildResponse(
         'Success',
         200,
         'The countries resource has been loaded successfully.',
         response?.data,
       )
-    ); */
+    );
   } catch (e) {
     const { response : { data }} = e
     res.json(
