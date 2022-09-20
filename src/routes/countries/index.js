@@ -30,12 +30,11 @@ router.get('/countries', async(req, res) => {
       )
     );
   } catch (e) {
-    const { response : { data }} = e
     res.json(
       buildResponse(
         'Error',
-        data.status,
-        data.message,
+        404,
+        'Country Not found',
       )
     );
   }
@@ -59,7 +58,7 @@ router.get('/countries-by-continent', async(req, res) => {
       buildResponse(
         'Error',
         404,
-        'Not found',
+        'Continent Not found',
       )
     );
 
