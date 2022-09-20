@@ -4,8 +4,8 @@ const axios = require('axios');
 const { buildResponse } = require('../../utils/functions');
 
 const countries = {
-  Europe: 'http://3.101.113.126/Server-Europe-Continent/index.php',
-  Africa: 'http://3.85.32.230/Server-Africa-Continent/index.php',
+  Europe: 'http://3.144.45.169/Server-Europe-Continent/index.php',
+  Africa: 'http://34.230.42.19/Server-Africa-Continent/index.php',
   'North America': 'http://34.226.202.66/server-america-continent/index.php',
   'South America': 'http://34.226.202.66/server-america-continent/index.php',
 };
